@@ -1,0 +1,24 @@
+spring:
+  servlet:
+      multipart:
+        max-request-size: 10Mb
+        max-file-size: 10Mb
+white-rabbit:
+  msgSuccess: 'You stay in Wonderland!'
+  msgFail: 'Something went wrong...'
+  msgFailColor: 'Color is invalid'
+  msgFailType: 'File type is invalid'
+  redirectUrl: 'http://localhost:4200'
+  workDir: '/path/to/your/web/root/'  #proxy nginx web root
+  outputFormat: 'png'
+  downloadDir: '/tmp/' #proxy nginx web download dir
+  downloadLink: '/download/' #should not be changed
+  resultWidth: 2000
+  resultHeight: 2000
+  thumbWidth: 450
+  thumbHeight: 450
+  mimeTypes:
+    - 'image/jpeg'
+    - 'image/png'
+    - 'image/gif'
+
