@@ -17,7 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import white.rabbit.config.YAMLConfig;
-import white.rabbit.exeptions.FileTransformException;
+import white.rabbit.exceptions.FileTransformException;
 import white.rabbit.models.Options;
 
 import javax.imageio.ImageIO;

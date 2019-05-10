@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import white.rabbit.config.YAMLConfig;
-import white.rabbit.exeptions.FileTransformException;
+import white.rabbit.exceptions.FileTransformException;
 import white.rabbit.models.RabbitResponse;
 import white.rabbit.models.Options;
 import white.rabbit.services.FileTransform;
