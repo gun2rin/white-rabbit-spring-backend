@@ -118,10 +118,11 @@ public class FileTransformer implements FileTransform<MultipartFile, Options> {
      */
     private void render() throws FileTransformException {
 
+        InputStream stream = null;
 
         try {
 
-            InputStream stream = this.source.getInputStream();
+            stream = this.source.getInputStream();
 
             ImageAsciiReader reader = new ImageAsciiReader(ImageIO.createImageInputStream(stream));
 
@@ -160,6 +161,17 @@ public class FileTransformer implements FileTransform<MultipartFile, Options> {
             this.error = true;
             this.messages.add(config.getMsgFail());
             throw new FileTransformException();
+        } finally {
+            if (stream != null) {
+                try {
+                    stream.close();
+                } catch (IOException e) {
+
+                    this.error = true;
+                    this.messages.add(config.getMsgFail());
+                    throw new FileTransformException();
+                }
+            }
         }
 
     }
