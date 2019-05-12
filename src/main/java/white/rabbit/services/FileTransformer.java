@@ -151,7 +151,6 @@ public class FileTransformer implements FileTransform<MultipartFile, Options> {
 
             this.messages.add(config.getMsgSuccess());
 
-            stream.close();
 
         } catch (IOException e) {
             this.error = true;
