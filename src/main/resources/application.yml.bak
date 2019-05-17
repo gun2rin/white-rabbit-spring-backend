@@ -9,7 +9,7 @@ white-rabbit:
   msgFailColor: 'Color is invalid'
   msgFailType: 'File type is invalid'
   redirectUrl: 'http://localhost:4200'
-  workDir: '/path/to/your/web/root/'  #proxy nginx web root
+  workDir: '/path/to/your/web/root/tmp/'  ##proxy nginx web root where pictures are creating
   outputFormat: 'png'
   downloadDir: '/tmp/' #proxy nginx web download dir
   downloadLink: '/download/' #should not be changed
