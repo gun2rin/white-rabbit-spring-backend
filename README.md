@@ -26,7 +26,7 @@ Embedded Tomcat will be available by default address `http://localhost:8080`
 Checkout [angular](https://github.com/gun2rin/white-rabbit-frontend) based frontend 
 
 ### PHP Symfony backend
-Checkout alternative [php-symfony](https://github.com/gun2rin/white-rabbit-symfony-backend)
+Checkout alternative [php-symfony](https://github.com/gun2rin/white-rabbit-symfony-backend) based backend
 
 ### Funny
 Java backend with spring-boot and dependencies packed is about 16Mb, unpacked ~59Mb
