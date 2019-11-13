@@ -24,7 +24,6 @@ src/main/resources/application.yml
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.nar
 *.ear
