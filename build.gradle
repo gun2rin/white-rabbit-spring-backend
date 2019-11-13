@@ -28,7 +28,7 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-configuration-processor")
-    implementation files('libs/img2a-1.2.1.jar')
+    implementation files('libs/img2a/img2a-1.2.1.jar')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
